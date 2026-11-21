@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Knowledge Navigator</h1>
+    <p>Ontology-Based Prerequisite Knowledge Identification System</p>
+    <p>Transforming Information into Intelligent Solutions</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#analysis">Knowledge Analysis</a>
+    <a href="#ontology">Ontology</a>
+    <a href="#relationships">Relationships</a>
+</nav>
+
+<main class="container">
+
+    <section class="card" id="about">
+        <h2>About the System</h2>
+        <p>
+            This system uses Ontology and Semantic Relationships
+            to identify the prerequisite knowledge required before
+            students learn advanced Artificial Intelligence topics.
+        </p>
+        <p>
+            It analyzes existing knowledge, identifies missing
+            concepts and recommends a personalized learning path.
+        </p>
+    </section>
+
+    <section class="card" id="analysis">
+        <h2>1. Select Advanced AI Topic</h2>
+        <p>Choose the topic you want to learn:</p>
+
+        <select id="topic">
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Deep Learning">Deep Learning</option>
+            <option value="Generative AI">Generative AI</option>
+            <option value="Natural Language Processing">
+                Natural Language Processing
+            </option>
+            <option value="Computer Vision">Computer Vision</option>
+        </select>
+
+        <h2 class="subheading">2. Your Existing Knowledge</h2>
+        <p>Select the subjects you have already studied:</p>
+
+        <div class="topics" id="topics"></div>
+
+        <button onclick="analyzeKnowledge()">
+            Analyze My Knowledge
+        </button>
+
+        <div class="result" id="result">
+            <h3>Knowledge Analysis Result</h3>
+            <div id="output"></div>
+        </div>
+    </section>
+
+    <section class="card" id="ontology">
+        <h2>3. Ontology Knowledge Graph</h2>
+        <p>
+            Visual representation of educational concepts
+            and prerequisite dependencies.
+        </p>
+
+        <div class="graph">
+            <div><span class="node blue">Advanced AI</span></div>
+            <div class="arrow">↓</div>
+            <div><span class="node purple">Deep Learning</span></div>
+            <div class="arrow">↓</div>
+            <div><span class="node cyan">Machine Learning</span></div>
+            <div class="arrow">↓</div>
+
+            <div class="basic-nodes">
+                <span class="node green">Mathematics</span>
+                <span class="node green">Python</span>
+                <span class="node green">Statistics</span>
+                <span class="node green">Data Structures</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="card" id="relationships">
+        <h2>4. Semantic Relationships</h2>
+
+        <div class="relation">
+            Mathematics → Prerequisite for → Machine Learning
+        </div>
+
+        <div class="relation">
+            Python Programming → Supports → AI Programming
+        </div>
+
+        <div class="relation">
+            Statistics → Supports → Machine Learning
+        </div>
+
+        <div class="relation">
+            Machine Learning → Prerequisite for → Deep Learning
+        </div>
+
+        <div class="relation">
+            Deep Learning → Supports → Generative AI
+        </div>
+
+        <div class="relation">
+            Deep Learning → Supports → Computer Vision
+        </div>
+
+        <div class="relation">
+            Machine Learning → Supports → NLP
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>5. Benefits of the System</h2>
+        <div class="relation">Identifies prerequisite knowledge.</div>
+        <div class="relation">Detects missing learning concepts.</div>
+        <div class="relation">Recommends personalized learning paths.</div>
+        <div class="relation">Improves logical and analytical thinking.</div>
+        <div class="relation">Organizes knowledge using ontology.</div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Knowledge to Intelligence | AI Knowledge Navigator</p>
+    <p>Ontology-Based Intelligent Learning System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
